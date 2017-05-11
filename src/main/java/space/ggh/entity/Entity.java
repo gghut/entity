@@ -8,4 +8,9 @@ import net.sf.json.JSONObject;
 public abstract class Entity {
 
     public abstract JSONObject toJson();
+
+    @Override
+    public String toString(){
+        return String.valueOf(toJson());
+    }
 }
